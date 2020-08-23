@@ -37,7 +37,11 @@
 #include <cstdio>
 #include <vector>
 #include <stdio.h>
+#ifdef _WIN32
 #include <direct.h>
+#else
+#include <unistd.h>
+#endif
 #include <time.h> 
 #include <ctype.h>
 #include <numeric>

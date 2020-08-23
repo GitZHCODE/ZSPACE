@@ -557,7 +557,7 @@ inline int qh__face_can_see_vertex_epsilon(qh_context_t* context, qh_face_t* fac
     return 0;
 }
 
-inline static inline void qh__assert_half_edge(qh_half_edge_t* edge, qh_context_t* context)
+inline static void qh__assert_half_edge(qh_half_edge_t* edge, qh_context_t* context)
 {
     QH_ASSERT(edge->opposite_he != -1);
     QH_ASSERT(edge->he != -1);
@@ -568,7 +568,7 @@ inline static inline void qh__assert_half_edge(qh_half_edge_t* edge, qh_context_
     QH_ASSERT(context->edges[edge->opposite_he].to_vertex != edge->to_vertex);
 }
 
-inline static inline void qh__assert_face(qh_face_t* face, qh_context_t* context)
+inline static void qh__assert_face(qh_face_t* face, qh_context_t* context)
 {
     int i;
 
