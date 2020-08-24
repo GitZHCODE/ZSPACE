@@ -13,11 +13,8 @@
 #pragma once
 
 #include <filesystem>
-#ifdef _WIN32
-namespace fs = std::experimental::filesystem;
-#else
 namespace fs = std::filesystem;
-#endif
+
 
 /*! \brief This method compares the time of creation of the two input file.
 *
