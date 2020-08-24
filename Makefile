@@ -3,7 +3,7 @@ checkHeaders:
 
 
 main:
-	g++ exampleExec/main.cpp -Icpp -Icpp/headers/zCore --std=c++17 -c 
+	g++ exampleExec/main.cpp -Icpp -Icpp/headers/zCore --std=c++17 -c -DZSPACE_DYNAMIC_LIBRARY
 
 
 
