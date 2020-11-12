@@ -539,8 +539,8 @@ namespace zSpace
 				zItHalfEdge newHE = halfEdges.insert(halfEdges.end(), zHalfEdge());
 
 				newHE->setId(n_he);
-				if (he.n != -1) newHE->setNext(&halfEdges[he.n]);
-				if (he.p != -1) newHE->setPrev(&halfEdges[he.p]);
+				if (he.n != -1) newHE->setNext(&halfEdges[0] + he.n);
+				if (he.p != -1) newHE->setPrev(&halfEdges[0] + he.p);
 				if (he.v != -1) newHE->setVertex(&vertices[he.v]);
 				if (he.e != -1) newHE->setEdge(&edges[he.e]);
 				if (he.f != -1) newHE->setFace(&faces[he.f]);
