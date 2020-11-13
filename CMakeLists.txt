@@ -23,7 +23,7 @@ set_target_properties(zspace PROPERTIES
 CXX_STANDARD 17
     )
 target_compile_features(zspace PRIVATE cxx_std_17)
-target_compile_definitions(zspace
+target_compile_definitions(zspace PUBLIC
 -DZSPACE_DYNAMIC_LIBRARY
 )
 ##
