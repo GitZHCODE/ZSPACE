@@ -21,6 +21,7 @@
 #endif
 
 #ifdef ZSPACE_DYNAMIC_LIBRARY
+#ifdef _WIN32
 #define ZSPACE_CORE __declspec(dllexport)
 #define ZSPACE_API  __declspec(dllexport)
 #define ZSPACE_TOOLS  __declspec(dllexport)
@@ -30,6 +31,7 @@
 #define ZSPACE_MAYA  __declspec(dllexport)
 #define ZSPACE_RHINO  __declspec(dllexport)
 #define ZSPACE_CUDA  __declspec(dllexport)
+#endif
 #else
 #define ZSPACE_CORE 
 #define ZSPACE_API 
