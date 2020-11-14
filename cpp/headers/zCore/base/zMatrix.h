@@ -140,9 +140,7 @@ namespace zSpace
 	/** @}*/
 
 	/** @}*/
-#undef ZSPACE_CORE
-#define ZSPACE_CORE
-class ZSPACE_CORE zMatrix2
+	class ZSPACE_CORE zMatrix2
 	{
 
 	protected:
