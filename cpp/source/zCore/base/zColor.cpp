@@ -12,6 +12,8 @@
 
 
 #include<headers/zCore/base/zColor.h>
+#include <cmath>
+
 
 namespace zSpace
 {

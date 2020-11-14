@@ -54,7 +54,8 @@ namespace zSpace
 	/** @}*/
 
 	/** @}*/
-	
+
+
 	struct ZSPACE_CORE BMPFileHeader
 	{
 		//--------------------------

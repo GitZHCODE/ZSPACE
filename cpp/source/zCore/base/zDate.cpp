@@ -12,6 +12,7 @@
 
 
 #include<headers/zCore/base/zDate.h>
+#include <tgmath.h>
 
 namespace zSpace
 {
