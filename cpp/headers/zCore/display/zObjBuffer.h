@@ -19,10 +19,13 @@
 
 #include <depends/openGL/glew.h>
 #include <depends/openGL/glext.h>
-
+#ifdef _WIN32
 #include <GL/GL.h>			// Header File For The OpenGL32 Library
 #include <gl/glu.h>			// Header File For The GLu32 Library
-
+#else
+#include <GL/gl.h>
+#include <GL/glu.h>
+#endif
 
 
 //#include <windows.h>		// Header File For Windows
