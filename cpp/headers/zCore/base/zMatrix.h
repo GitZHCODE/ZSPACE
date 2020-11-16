@@ -10,8 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_MATRIX_H
-#define ZSPACE_MATRIX_H
 
 #pragma once
 
@@ -1252,4 +1250,3 @@ namespace zSpace
 #include<source/zCore/base/zMatrix.cpp>
 #endif
 
-#endif

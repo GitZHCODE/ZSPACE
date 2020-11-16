@@ -10,8 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_ZVECTOR_H
-#define ZSPACE_ZVECTOR_H
 
 #pragma once
 
@@ -433,6 +431,4 @@ namespace  zSpace
 // All defined OK so do nothing
 #else
 #include<source/zCore/base/zVector.cpp>
-#endif
-
 #endif

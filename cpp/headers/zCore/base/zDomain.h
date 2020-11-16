@@ -10,9 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_ZDOMAIN_H
-#define ZSPACE_ZDOMAIN_H
-
 #pragma once
 
 #include<headers/zCore/base/zDefinitions.h>
@@ -148,6 +145,4 @@ namespace  zSpace
 // All defined OK so do nothing
 #else
 #include<source/zCore/base/zDomain.cpp>
-#endif
-
 #endif

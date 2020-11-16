@@ -10,9 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_QUATERNION_H
-#define ZSPACE_QUATERNION_H
-
 #pragma once
 
 #include<headers/zCore/base/zDefinitions.h>
@@ -250,6 +247,4 @@ namespace  zSpace
 #if defined(ZSPACE_STATIC_LIBRARY)  || defined(ZSPACE_DYNAMIC_LIBRARY)
 #else
 #include<source/zCore/base/zQuaternion.cpp>
-#endif
-
 #endif

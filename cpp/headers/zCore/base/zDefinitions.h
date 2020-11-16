@@ -10,8 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_DEFINITION
-#define ZSPACE_DEFINITION
 
 #pragma once
 #include <vector>
@@ -304,5 +302,3 @@ namespace zSpace
 	/** @}*/
 
 }
-
-#endif

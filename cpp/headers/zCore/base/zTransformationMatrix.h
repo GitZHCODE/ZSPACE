@@ -10,8 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_TRANSFORMATIONMATRIX_H
-#define ZSPACE_TRANSFORMATIONMATRIX_H
 
 #pragma once
 
@@ -406,6 +404,4 @@ namespace zSpace
 #if defined(ZSPACE_STATIC_LIBRARY)  || defined(ZSPACE_DYNAMIC_LIBRARY)
 #else
 #include<source/zCore/base/zTransformationMatrix.cpp>
-#endif
-
 #endif

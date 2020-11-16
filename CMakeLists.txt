@@ -23,7 +23,7 @@ cpp/source/zCore/base/zMatrix.cpp
 
 target_compile_definitions(zspaceBase PUBLIC
     ZSPACE_DYNAMIC_LIBRARY
-    ZSPACE_CORE=""
+#     ZSPACE_CORE=""
 )
 
 ##
@@ -39,5 +39,5 @@ target_compile_definitions(zapp PUBLIC
 #target_compile_features(zapp PRIVATE cxx_std_17)
 target_link_libraries(zapp PRIVATE
     zspaceBase
-    GL
+#    GL
 )

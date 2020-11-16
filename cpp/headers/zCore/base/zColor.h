@@ -10,9 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_ZCOLOR_H
-#define ZSPACE_ZCOLOR_H
-
 #pragma once
 
 #include <stdexcept>
@@ -147,6 +144,4 @@ namespace zSpace
 // All defined OK so do nothing
 #else
 #include<source/zCore/base/zColor.cpp>
-#endif
-
 #endif

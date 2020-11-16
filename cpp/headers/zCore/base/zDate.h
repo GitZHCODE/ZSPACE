@@ -10,9 +10,6 @@
 // Author : Vishu Bhooshan <vishu.bhooshan@zaha-hadid.com>
 //
 
-#ifndef ZSPACE_ZDATE_H
-#define ZSPACE_ZDATE_H
-
 #pragma once
 #include <stdexcept>
 #include <vector>
@@ -202,8 +199,6 @@ struct ZSPACE_CORE std::hash<zSpace::zDate>
 // All defined OK so do nothing
 #else
 #include<source/zCore/base/zDate.cpp>
-#endif
-
 #endif
 
 
