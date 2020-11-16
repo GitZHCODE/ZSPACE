@@ -6,37 +6,38 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 include_directories(
 cpp
-cpp/headers/zCore
 )
 
 ## 
 ## sharedlibrary 
 ##
-add_library(zspace SHARED
-# cpp/source/zCore/geometry/zGraph.cpp
-# cpp/source/zCore/geometry/zHEGeomTypes.cpp
-cpp/source/zCore/geometry/zMesh.cpp
-# cpp/source/zCore/geometry/zPointCloud.cpp
+add_library(zspaceBase SHARED
+cpp/source/zCore/base/zColor.cpp
+cpp/source/zCore/base/zVector.cpp
+cpp/source/zCore/base/zDate.cpp
+cpp/source/zCore/base/zQuaternion.cpp
+cpp/source/zCore/base/zDomain.cpp
+cpp/source/zCore/base/zTransformationMatrix.cpp
+cpp/source/zCore/base/zMatrix.cpp
 )
 
-set_target_properties(zspace PROPERTIES
-CXX_STANDARD 17
-    )
-target_compile_features(zspace PRIVATE cxx_std_17)
-target_compile_definitions(zspace PUBLIC
--DZSPACE_DYNAMIC_LIBRARY
+target_compile_definitions(zspaceBase PUBLIC
+    ZSPACE_DYNAMIC_LIBRARY
+    ZSPACE_CORE=""
 )
-target_compile_features(zspace PRIVATE cxx_std_17)
-)
+
 ##
 ## one test executable
 ##
-#add_executable(zapp
-#cpp/source/zApp/zApp.cpp
-#)
+add_executable(zapp
+    cpp/source/zApp/zApp.cpp
+)
+target_compile_definitions(zapp PUBLIC
+    ZSPACE_CUDA_CALLABLE=""
+)
 
 #target_compile_features(zapp PRIVATE cxx_std_17)
-
-#target_link_libraries(zapp PRIVATE#
-#	zspace
-#)
+target_link_libraries(zapp PRIVATE
+    zspaceBase
+    GL
+)

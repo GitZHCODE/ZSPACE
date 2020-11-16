@@ -15,7 +15,7 @@
 #endif
 
 #if defined(ZSPACE_STATIC_LIBRARY)  || defined(ZSPACE_DYNAMIC_LIBRARY)
-#  define ZSPACE_INLINE 
+#  define ZSPACE_INLINE
 #else
 #  define ZSPACE_INLINE inline
 #endif
@@ -33,19 +33,10 @@
 #define ZSPACE_CUDA  __declspec(dllexport)
 #endif
 #else
-#define ZSPACE_CORE 
-#define ZSPACE_API 
-#define ZSPACE_TOOLS
-#define ZSPACE_AG 
-#define ZSPACE_APP  
-#define ZSPACE_INTEROP 
-#define ZSPACE_MAYA  
-#define ZSPACE_RHINO  
-#define ZSPACE_CUDA  
 #endif
 
 #ifndef __CUDACC__
-#define ZSPACE_CUDA_CALLABLE 
-#define ZSPACE_CUDA_CALLABLE_HOST 
-#define ZSPACE_CUDA_CALLABLE_DEVICE 
+#define ZSPACE_CUDA_CALLABLE
+#define ZSPACE_CUDA_CALLABLE_HOST
+#define ZSPACE_CUDA_CALLABLE_DEVICE
 #endif
